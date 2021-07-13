@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Author extends Person {
+
     private final List<String> books;
 
     public Author(String firstName, String lastName) {
@@ -29,6 +30,6 @@ public class Author extends Person {
     }
 
     public String sortName() {
-        return String.format("%s, %s", lastName, firstName);
+        return String.format("%s, %s", super.lastName, super.firstName);
     }
 }
